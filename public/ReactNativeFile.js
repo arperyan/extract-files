@@ -13,7 +13,7 @@
 */
  import { ReactNativeFile } from 'extract-files';
 
-export class ReactNativeFile {
+export default class ReactNativeFile {
   constructor({ uri, name, type }) {
     this.uri = uri;
     this.name = name;
