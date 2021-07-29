@@ -13,9 +13,11 @@
 */
  import { ReactNativeFile } from 'extract-files';
 
- const file = new ReactNativeFile({
-  uri: uriFromCameraRoll,
-  name: 'a.jpg',
-  type: 'image/jpeg',
- });
+export class ReactNativeFile {
+  constructor({ uri, name, type }) {
+    this.uri = uri;
+    this.name = name;
+    this.type = type;
+  }
+};
 
